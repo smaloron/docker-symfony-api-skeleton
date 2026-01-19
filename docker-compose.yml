@@ -1,0 +1,113 @@
+# Ce fichier décrit l'ensemble des services nécessaires à l'application
+services:
+
+  # =========================
+  # Service PHP (backend)
+  # =========================
+  php:
+    # Nom explicite du conteneur Docker
+    container_name: cda-php
+
+    # Construction d'une image personnalisée
+    build:
+      # Dossier contenant le Dockerfile PHP
+      context: ./docker/php
+
+    # Volumes partagés entre la machine hôte et le conteneur
+    volumes:
+      # Le projet local est monté dans /srv/app
+      # cached = optimisation de performances (surtout macOS)
+      - ./:/srv/app:cached
+
+    # Variables d'environnement disponibles dans le conteneur
+    environment:
+      # Indique à l'application qu'elle tourne en mode développement
+      APP_ENV: dev
+
+    # Dépendances de démarrage
+    depends_on:
+      # La base de données doit être lancée avant PHP
+      - db
+      # Redis doit être lancé avant PHP
+      - redis
+
+  # =========================
+  # Service Nginx (serveur web)
+  # =========================
+  nginx:
+    # Nom explicite du conteneur Nginx
+    container_name: cda-webserver
+
+    # Image officielle Nginx, version légère basée sur Alpine
+    image: nginx:1.27-alpine
+
+    # Redirection des ports
+    ports:
+      # Port 8080 de la machine → port 80 du conteneur
+      - "8080:80"
+
+    # Volumes nécessaires à Nginx
+    volumes:
+      # Code applicatif accessible par Nginx
+      - ./api:/srv/app:cached
+
+      # Fichier de configuration Nginx personnalisé
+      # ro = lecture seule (bonne pratique)
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+
+    # Nginx dépend du service PHP pour traiter les requêtes dynamiques
+    depends_on:
+      - php
+
+  # =========================
+  # Service PostgreSQL (base de données)
+  # =========================
+  db:
+    # Nom explicite du conteneur PostgreSQL
+    container_name: cda-database
+
+    # Image officielle PostgreSQL
+    image: postgres:17-alpine
+
+    # Variables utilisées lors de l'initialisation de la base
+    environment:
+      # Nom de la base de données créée automatiquement
+      POSTGRES_DB: app
+
+      # Utilisateur PostgreSQL
+      POSTGRES_USER: app
+
+      # Mot de passe PostgreSQL (acceptable en dev uniquement)
+      POSTGRES_PASSWORD: app
+
+    # Volume pour persister les données PostgreSQL
+    volumes:
+      # Les données sont stockées hors du conteneur
+      - pgdata:/var/lib/postgresql/data
+
+    # Exposition du port PostgreSQL vers la machine hôte
+    ports:
+      # Permet la connexion depuis un client externe (DBeaver, psql, etc.)
+      - "5432:5432"
+
+  # =========================
+  # Service Redis (cache / sessions)
+  # =========================
+  redis:
+    # Nom explicite du conteneur Redis
+    container_name: cda-redis
+
+    # Image officielle Redis
+    image: redis:7-alpine
+
+    # Exposition du port Redis
+    ports:
+      # Utile pour debug ou outils Redis externes
+      - "6379:6379"
+
+# =========================
+# Déclaration des volumes Docker
+# =========================
+volumes:
+  # Volume nommé pour persister les données PostgreSQL
+  pgdata:
