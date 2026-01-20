@@ -1,4 +1,3 @@
 # domain	path	name	value	date
-
 localhost	/	main_deauth_profile_token	c8c905	-1
-localhost	/	sf_redirect	%7B%22token%22%3A%2251c687%22%2C%22route%22%3A%22author_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAuthorController%22%2C%22method%22%3A%22insert%22%2C%22file%22%3A%22%5C%2Fsrv%5C%2Fapp%5C%2Fapi%5C%2Fsrc%5C%2FController%5C%2FAuthorController.php%22%2C%22line%22%3A18%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D	-1
+localhost	/	sf_redirect	%7B%22token%22%3A%2273633f%22%2C%22route%22%3A%22article_insert%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CArticleController%22%2C%22method%22%3A%22insert%22%2C%22file%22%3A%22%5C%2Fsrv%5C%2Fapp%5C%2Fapi%5C%2Fsrc%5C%2FController%5C%2FArticleController.php%22%2C%22line%22%3A19%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D	-1

@@ -34,6 +34,7 @@ final class AuthorController extends AbstractController
                 ->setPassword($data['password'])
         ;
 
+        // Gère la persistance
         $entityManager->persist($author);
         $entityManager->flush();
 
