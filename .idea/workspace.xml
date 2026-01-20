@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de267d6-c21a-474c-a888-fb1ec55bf42d" name="Changes" comment="Persistance des deux entités liées">
+    <list default="true" id="6de267d6-c21a-474c-a888-fb1ec55bf42d" name="Changes" comment="Validation">
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http-requests/article.http" beforeDir="false" afterPath="$PROJECT_DIR$/http-requests/article.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +283,7 @@
       <workItem from="1768755171872" duration="191000" />
       <workItem from="1768755366101" duration="6210000" />
       <workItem from="1768813720053" duration="20019000" />
-      <workItem from="1768887357497" duration="10403000" />
+      <workItem from="1768887357497" duration="11798000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -312,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768904697447</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Validation">
+      <option name="closed" value="true" />
+      <created>1768907635337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768907635337</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +338,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="some stuff" />
     <MESSAGE value="Persistance des deux entités liées" />
-    <option name="LAST_COMMIT_MESSAGE" value="Persistance des deux entités liées" />
+    <MESSAGE value="Validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

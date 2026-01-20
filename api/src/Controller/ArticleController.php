@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 #[Route('/article', name: 'article')]
@@ -22,29 +23,29 @@ class ArticleController extends AbstractController
         EntityManagerInterface $entityManager,
         AuthorRepository $authorRepository,
         ValidatorInterface $validator,
+        SerializerInterface $serializer,
     )
     {
         // Récupére le corps de la requête
         $requestBody = $request->getContent();
 
         // Sérialise les données
-        $data = json_decode($requestBody, true);
 
-        $article = new Article;
-        $article->setTitle($data['title']);
-        $article->setContent($data['content']);
-        $article->setCreatedAt(new \DateTime('now'));
+        $article = $serializer->deserialize($requestBody, Article::class, 'json');
 
-        if(array_key_exists('author', $data)){
+
+
+        if($article->getAuthor() !== null){
 
             // recherche un auteur existant
             // avec les données transmises
             $author = $authorRepository->findOneBy(
                 [
-                    'name' => $data['author']['name'],
-                    'firstName' => $data['author']['firstName'],
+                    'name' => $article->getAuthor()->getName(),
+                    'firstName' => $article->getAuthor()->getFirstName(),
                 ]
             );
+            /*
             if(!$author){
                 $author = new Author();
                 $author->setName($data['author']['name']);
@@ -52,7 +53,7 @@ class ArticleController extends AbstractController
                 $author->setLogin($data['author']['login']);
                 $author->setPassword($data['author']['password']);
                 //$entityManager->persist($author);
-            }
+            }*/
 
 
             $article->setAuthor($author);
