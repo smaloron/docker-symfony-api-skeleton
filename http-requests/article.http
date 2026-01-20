@@ -3,10 +3,10 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "title": "Tout sur Symfony",
+  "title": "test de Symfony",
   "content": "bla bla",
   "author": {
-    "name": "Potencier",
+    "name": "",
     "firstName": "Fabien",
     "login": "fab",
     "password": "123"

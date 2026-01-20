@@ -6,6 +6,7 @@ use App\Repository\ArticleRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Attribute\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: ArticleRepository::class)]
 #[ORM\Table(name: 'articles')]
@@ -17,6 +18,11 @@ class Article
     #[ORM\Column]
     private ?int $id = null;
 
+    #[Assert\NotBlank(message: 'Le titre ne peut être vide')]
+    #[Assert\Length(min: 5, max: 90,
+        minMessage: 'Le titre ne peut faire moins de {{ limit }} caractères',
+        maxMessage: 'Le titre ne peut faire plus de {{ limit }} caractères')
+    ]
     #[Groups(['article:read'])]
     #[ORM\Column(length: 255)]
     private ?string $title = null;
@@ -34,7 +40,7 @@ class Article
     private ?\DateTime $updatedAt = null;
 
     #[Groups(['article:read'])]
-    #[ORM\ManyToOne(inversedBy: 'articles')]
+    #[ORM\ManyToOne(targetEntity: Author::class, cascade: ['persist'], inversedBy: 'articles')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Author $author = null;
 

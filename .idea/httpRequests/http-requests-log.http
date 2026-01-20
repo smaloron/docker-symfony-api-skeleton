@@ -1,6 +1,78 @@
 POST http://localhost:8080/article/
 Accept: application/json
 Content-Type: application/json
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905
+
+{
+  "title": "test de Symfony",
+  "content": "bla bla",
+  "author": {
+    "name": "",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-20T115210.201.json
+
+###
+
+POST http://localhost:8080/article/
+Accept: application/json
+Content-Type: application/json
+Content-Length: 155
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905
+
+{
+  "title": "",
+  "content": "bla bla",
+  "author": {
+    "name": "Potencier",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-20T114952.400.json
+
+###
+
+POST http://localhost:8080/article/
+Accept: application/json
+Content-Type: application/json
+Content-Length: 156
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905; sf_redirect=%7B%22token%22%3A%2273633f%22%2C%22route%22%3A%22article_insert%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CArticleController%22%2C%22method%22%3A%22insert%22%2C%22file%22%3A%22%5C%2Fsrv%5C%2Fapp%5C%2Fapi%5C%2Fsrc%5C%2FController%5C%2FArticleController.php%22%2C%22line%22%3A19%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D
+
+{
+  "title": "T",
+  "content": "bla bla",
+  "author": {
+    "name": "Potencier",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-20T114848.400.json
+
+###
+
+POST http://localhost:8080/article/
+Accept: application/json
+Content-Type: application/json
 Content-Length: 171
 User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
 Accept-Encoding: br, deflate, gzip, x-gzip

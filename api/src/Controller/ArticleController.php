@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 #[Route('/article', name: 'article')]
 class ArticleController extends AbstractController
@@ -20,6 +21,7 @@ class ArticleController extends AbstractController
         Request $request,
         EntityManagerInterface $entityManager,
         AuthorRepository $authorRepository,
+        ValidatorInterface $validator,
     )
     {
         // Récupére le corps de la requête
@@ -49,13 +51,19 @@ class ArticleController extends AbstractController
                 $author->setFirstName($data['author']['firstName']);
                 $author->setLogin($data['author']['login']);
                 $author->setPassword($data['author']['password']);
-                $entityManager->persist($author);
+                //$entityManager->persist($author);
             }
 
 
             $article->setAuthor($author);
         }
 
+        // Validation de l'entité
+        $errors = $validator->validate($article);
+
+        if(count($errors) > 0){
+            return $this->json($errors, Response::HTTP_BAD_REQUEST);
+        }
 
 
         $entityManager->persist($article);

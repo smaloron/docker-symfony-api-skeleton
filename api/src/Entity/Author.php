@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Attribute\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: AuthorRepository::class)]
 class Author
@@ -16,6 +17,7 @@ class Author
     #[ORM\Column]
     private ?int $id = null;
 
+    #[Assert\NotBlank(message:"Le nom de l'auteur ne peut être vide")]
     #[Groups(['author:read'])]
     #[ORM\Column(length: 50)]
     private ?string $name = null;
