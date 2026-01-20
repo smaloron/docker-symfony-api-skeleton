@@ -1,0 +1,74 @@
+POST http://localhost:8080/author/
+Accept: application/json
+Content-Type: application/json
+Content-Length: 91
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905; sf_redirect=%7B%22token%22%3A%22fab99d%22%2C%22route%22%3A%22author_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAuthorController%22%2C%22method%22%3A%22insert%22%2C%22file%22%3A%22%5C%2Fsrv%5C%2Fapp%5C%2Fapi%5C%2Fsrc%5C%2FController%5C%2FAuthorController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D
+
+{
+  "name": "Brahé",
+  "firstName": "Tycho",
+  "login": "astrogeek",
+  "password": "123"
+}
+
+<> 2026-01-20T100031.201.json
+
+###
+
+POST http://localhost:8080/author/
+Accept: application/json
+Content-Type: application/json
+Content-Length: 91
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905; sf_redirect=%7B%22token%22%3A%22c8c905%22%2C%22route%22%3A%22author_create%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAuthorController%22%2C%22method%22%3A%22insert%22%2C%22file%22%3A%22%5C%2Fsrv%5C%2Fapp%5C%2Fapi%5C%2Fsrc%5C%2FController%5C%2FAuthorController.php%22%2C%22line%22%3A15%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D
+
+{
+  "name": "Brahé",
+  "firstName": "Tycho",
+  "login": "astrogeek",
+  "password": "123"
+}
+
+<> 2026-01-20T095730.201.json
+
+###
+
+POST http://localhost:8080/author/
+Accept: application/json
+Content-Type: application/json
+Content-Length: 91
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+{
+  "name": "Brahé",
+  "firstName": "Tycho",
+  "login": "astrogeek",
+  "password": "123"
+}
+
+<> 2026-01-20T095401.201.json
+
+###
+
+POST http://localhost:8080/author
+Accept: application/json
+Content-Type: application/json
+Content-Length: 91
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+
+{
+  "name": "Brahé",
+  "firstName": "Tycho",
+  "login": "astrogeek",
+  "password": "123"
+}
+
+<> 2026-01-20T095217.404.json
+
+###
+

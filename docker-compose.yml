@@ -23,6 +23,8 @@ services:
     environment:
       # Indique à l'application qu'elle tourne en mode développement
       APP_ENV: dev
+      REDIS_URL: localhost://6379
+      DATABASE_URL: postgresql://app:app@db:5432/app?serverVersion=17&charset=utf8
 
     # Dépendances de démarrage
     depends_on:
