@@ -15,14 +15,15 @@ class Author
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['author:read', 'article:write'])]
     private ?int $id = null;
 
     #[Assert\NotBlank(message:"Le nom de l'auteur ne peut être vide")]
-    #[Groups(['author:read'])]
+        #[Groups(['author:read', 'article:write'])]
     #[ORM\Column(length: 50)]
     private ?string $name = null;
 
-    #[Groups(['author:read'])]
+    #[Groups(['author:read', 'article:write'])]
     #[ORM\Column(length: 30)]
     private ?string $firstName = null;
 

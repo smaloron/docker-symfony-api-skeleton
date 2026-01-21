@@ -142,6 +142,14 @@
       <path value="$PROJECT_DIR$/api/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/api/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/api/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/api/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/api/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/api/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/api/vendor/zenstruck/foundry" />
+      <path value="$PROJECT_DIR$/api/vendor/zenstruck/assert" />
+      <path value="$PROJECT_DIR$/api/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/api/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/phpunit-bridge" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.4" />

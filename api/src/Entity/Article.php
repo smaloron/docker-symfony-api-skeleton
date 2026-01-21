@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 #[ORM\Table(name: 'articles')]
 class Article
 {
-    #[Groups(['article:read'])]
+    #[Groups(['article:read', 'article:write'])]
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
@@ -23,11 +23,11 @@ class Article
         minMessage: 'Le titre ne peut faire moins de {{ limit }} caractères',
         maxMessage: 'Le titre ne peut faire plus de {{ limit }} caractères')
     ]
-    #[Groups(['article:read'])]
+    #[Groups(['article:read', 'article:write'])]
     #[ORM\Column(length: 255)]
     private ?string $title = null;
 
-    #[Groups(['article:read'])]
+    #[Groups(['article:read', 'article:write'])]
     #[ORM\Column(type: Types::TEXT)]
     private ?string $content = null;
 
@@ -39,9 +39,10 @@ class Article
     #[ORM\Column(nullable: true)]
     private ?\DateTime $updatedAt = null;
 
-    #[Groups(['article:read'])]
+    #[Groups(['article:read', 'article:write'])]
     #[ORM\ManyToOne(targetEntity: Author::class, cascade: ['persist'], inversedBy: 'articles')]
     #[ORM\JoinColumn(nullable: false)]
+    #[Assert\Valid]
     private ?Author $author = null;
 
     public function getId(): ?int

@@ -6,6 +6,8 @@ use App\Entity\Article;
 use App\Entity\Author;
 use App\Repository\ArticleRepository;
 use App\Repository\AuthorRepository;
+use App\service\AuthorResolver;
+use App\service\FromJsonArticleCreator;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -20,63 +22,36 @@ class ArticleController extends AbstractController
     #[Route('/', name: '_insert', methods: ['POST'])]
     public function insert(
         Request $request,
-        EntityManagerInterface $entityManager,
-        AuthorRepository $authorRepository,
-        ValidatorInterface $validator,
-        SerializerInterface $serializer,
-    )
+        FromJsonArticleCreator $creator
+
+    ): Response
     {
         // Récupére le corps de la requête
         $requestBody = $request->getContent();
 
         // Sérialise les données
-
-        $article = $serializer->deserialize($requestBody, Article::class, 'json');
-
-
-
-        if($article->getAuthor() !== null){
-
-            // recherche un auteur existant
-            // avec les données transmises
-            $author = $authorRepository->findOneBy(
-                [
-                    'name' => $article->getAuthor()->getName(),
-                    'firstName' => $article->getAuthor()->getFirstName(),
-                ]
+        // Et capture l'exception en cas d'erreur de sérialisation
+        try {
+            $result = $creator->create($requestBody);
+        } catch (\Throwable){
+            return $this->json(
+                ["errors" => "JSON Invalide"],
+                Response::HTTP_BAD_REQUEST
             );
-            /*
-            if(!$author){
-                $author = new Author();
-                $author->setName($data['author']['name']);
-                $author->setFirstName($data['author']['firstName']);
-                $author->setLogin($data['author']['login']);
-                $author->setPassword($data['author']['password']);
-                //$entityManager->persist($author);
-            }*/
-
-
-            $article->setAuthor($author);
         }
 
-        // Validation de l'entité
-        $errors = $validator->validate($article);
-
-        if(count($errors) > 0){
-            return $this->json($errors, Response::HTTP_BAD_REQUEST);
+        if(! $result->isValid()){
+            return $this->json(
+                $result->errors,
+                Response::HTTP_BAD_REQUEST
+            );
         }
-
-
-        $entityManager->persist($article);
-        $entityManager->flush();
 
         return $this->json(
-            $article,
+            $result->data,
             Response::HTTP_CREATED,
             [],
-            [
-                'groups' => ['article:read', 'author:read'],
-            ]
+            ['groups' => ['article:read', 'author:read']]
         );
 
     }
