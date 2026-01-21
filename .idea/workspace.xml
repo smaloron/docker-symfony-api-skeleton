@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de267d6-c21a-474c-a888-fb1ec55bf42d" name="Changes" comment="serializer">
-      <change afterPath="$PROJECT_DIR$/api/src/Dto/ApiResponseDto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/service/AuthorResolver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/service/FromJsonArticleCreator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/tests/SimpleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony-api.iml" afterDir="false" />
+    <list default="true" id="6de267d6-c21a-474c-a888-fb1ec55bf42d" name="Changes" comment="Ajoute .idea à .gitignore">
+      <change afterPath="$PROJECT_DIR$/api/tests/ArticleControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Service/AuthorRevolverTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/Service/FromJsonArticleCreatorTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/packages/cache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/cache.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/reference.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/phpunit.dist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/phpunit.dist.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php/conf.d/10-opcache.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/service/AuthorResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/service/AuthorResolver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/service/FromJsonArticleCreator.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/service/FromJsonArticleCreator.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,7 +294,7 @@
       <workItem from="1768755171872" duration="191000" />
       <workItem from="1768755366101" duration="6210000" />
       <workItem from="1768813720053" duration="20019000" />
-      <workItem from="1768887357497" duration="28555000" />
+      <workItem from="1768887357497" duration="35078000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -349,7 +336,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768912297904</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactoring de ArticleController">
+      <option name="closed" value="true" />
+      <created>1768989718383</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768989718383</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ajoute .idea à .gitignore">
+      <option name="closed" value="true" />
+      <created>1768989910604</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1768989910604</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +375,9 @@
     <MESSAGE value="Persistance des deux entités liées" />
     <MESSAGE value="Validation" />
     <MESSAGE value="serializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="serializer" />
+    <MESSAGE value="Refactoring de ArticleController" />
+    <MESSAGE value="Ajoute .idea à .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajoute .idea à .gitignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

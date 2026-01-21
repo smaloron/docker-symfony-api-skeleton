@@ -28,7 +28,7 @@ class AuthorResolver
         }
 
         return $this->repository->findOneBy(
-            ['firstName' => $firstName, 'lastName' => $name]
+            ['firstName' => $firstName, 'name' => $name]
         );
     }
 

@@ -19,7 +19,7 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 #[Route('/article', name: 'article')]
 class ArticleController extends AbstractController
 {
-    #[Route('/', name: '_insert', methods: ['POST'])]
+    #[Route('', name: '_insert', methods: ['POST'])]
     public function insert(
         Request $request,
         FromJsonArticleCreator $creator

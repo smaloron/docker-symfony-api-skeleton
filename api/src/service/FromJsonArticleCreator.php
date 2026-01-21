@@ -13,7 +13,6 @@ class FromJsonArticleCreator
 {
     public function __construct(
         private EntityManagerInterface $entityManager,
-        private AuthorRepository $authorRepository,
         private ValidatorInterface $validator,
         private SerializerInterface $serializer,
         private AuthorResolver $authorResolver
@@ -22,7 +21,7 @@ class FromJsonArticleCreator
 
     public function create(string $json){
 
-        // Déssérialisation dans une Article
+        // Désérialisation dans un Article
         $article = $this->serializer->deserialize(
             $json,
             Article::class,
