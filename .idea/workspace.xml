@@ -4,14 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de267d6-c21a-474c-a888-fb1ec55bf42d" name="Changes" comment="Ajoute .idea à .gitignore">
-      <change afterPath="$PROJECT_DIR$/api/tests/ArticleControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/tests/Service/AuthorRevolverTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/tests/Service/FromJsonArticleCreatorTest.php" afterDir="false" />
+    <list default="true" id="6de267d6-c21a-474c-a888-fb1ec55bf42d" name="Changes" comment="Sécurité">
+      <change afterPath="$PROJECT_DIR$/api/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/EventListener/AuthorPasswordHasherListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/EventListener/JwtCreationListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/Security/Voter/ArticleVoter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-requests/auth.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/reference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/routes.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/service/AuthorResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/service/AuthorResolver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/service/FromJsonArticleCreator.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/service/FromJsonArticleCreator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Controller/AuthorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Controller/AuthorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Entity/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Factory/AuthorFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Factory/AuthorFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http-requests/article.http" beforeDir="false" afterPath="$PROJECT_DIR$/http-requests/article.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +219,8 @@
       <path value="$PROJECT_DIR$/api/vendor/predis/predis" />
       <path value="$PROJECT_DIR$/api/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/api/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/api/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/api/vendor/lexik/jwt-authentication-bundle" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -215,11 +234,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "HTTP Request.article | #1.executor": "Run",
+    "HTTP Request.article | #2.executor": "Run",
+    "HTTP Request.article | #3.executor": "Run",
+    "HTTP Request.auth | #1.executor": "Run",
     "HTTP Request.rest-api | #1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected": "true",
     "git-widget-placeholder": "doctrine",
     "last_opened_file_path": "/Users/seb/Documents/formation/cda-mut/symfony-api/http-requests",
     "node.js.detected.package.eslint": "true",
@@ -227,6 +250,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
@@ -253,6 +277,9 @@
           <value>
             <map>
               <entry key="article | #1" value="STOPPED" />
+              <entry key="article | #2" value="STOPPED" />
+              <entry key="article | #3" value="STOPPED" />
+              <entry key="auth | #1" value="STOPPED" />
               <entry key="rest-api | #1" value="STOPPED" />
             </map>
           </value>
@@ -260,8 +287,17 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.article | #1">
+  <component name="RunManager" selected="HTTP Request.article | #3">
     <configuration name="article | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/article.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="article | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/article.http" executionIdentifier="#2" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="article | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/article.http" executionIdentifier="#3" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="auth | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/auth.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/rest-api.http" executionIdentifier="#1" runType="Run single request">
@@ -269,7 +305,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.article | #3" />
+        <item itemvalue="HTTP Request.article | #2" />
         <item itemvalue="HTTP Request.article | #1" />
+        <item itemvalue="HTTP Request.auth | #1" />
         <item itemvalue="HTTP Request.rest-api | #1" />
       </list>
     </recent_temporary>
@@ -294,7 +333,7 @@
       <workItem from="1768755171872" duration="191000" />
       <workItem from="1768755366101" duration="6210000" />
       <workItem from="1768813720053" duration="20019000" />
-      <workItem from="1768887357497" duration="35078000" />
+      <workItem from="1768887357497" duration="54424000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -352,7 +391,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768989910604</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Tests unitaires et fonctionnels">
+      <option name="closed" value="true" />
+      <created>1769001815301</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769001815301</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +424,9 @@
     <MESSAGE value="serializer" />
     <MESSAGE value="Refactoring de ArticleController" />
     <MESSAGE value="Ajoute .idea à .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajoute .idea à .gitignore" />
+    <MESSAGE value="Tests unitaires et fonctionnels" />
+    <MESSAGE value="Sécurité" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sécurité" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

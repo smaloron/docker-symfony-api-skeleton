@@ -1,3 +1,214 @@
+PUT http://localhost:8080/api/article/522
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
+content-length: 0
+
+<> 2026-01-21T164308.200.json
+
+###
+
+PUT http://localhost:8080/api/article/617
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
+content-length: 0
+
+<> 2026-01-21T164222.403.json
+
+###
+
+PUT http://localhost:8080/api/article/617
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
+content-length: 0
+
+<> 2026-01-21T164204.403.json
+
+###
+
+GET http://localhost:8080/api/article
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
+
+<> 2026-01-21T162236.200.json
+
+###
+
+POST http://localhost:8080/api/article
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
+Content-Length: 165
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
+
+{
+  "title": "test de Symfony",
+  "content": "bla bla",
+  "author": {
+    "name": "toto",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-21T161954.400.json
+
+###
+
+POST http://localhost:8080/api/article
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: api_deauth_profile_token=62fa88; main_deauth_profile_token=c8c905
+
+{
+  "title": "test de Symfony",
+  "content": "bla bla",
+  "author": {
+    "name": "",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-21T161941.400.json
+
+###
+
+POST http://localhost:8080/api/article
+Accept: application/json
+Content-Type: application/json
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905
+
+{
+  "title": "test de Symfony",
+  "content": "bla bla",
+  "author": {
+    "name": "",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-21T161837.401.json
+
+###
+
+POST http://localhost:8080/api/article/
+Accept: application/json
+Content-Type: application/json
+Content-Length: 161
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905
+
+{
+  "title": "test de Symfony",
+  "content": "bla bla",
+  "author": {
+    "name": "",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-21T161830.404.json
+
+###
+
+POST http://localhost:8080/api/login_check
+Accept: application/json
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905
+
+{
+  "username": "admin",
+  "password": "123"
+}
+
+<> 2026-01-21T161751.200.json
+
+###
+
+POST http://localhost:8080/api/login_check
+Accept: application/json
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905
+
+{
+  "username": "admin",
+  "password": "123"
+}
+
+<> 2026-01-21T161530.500.json
+
+###
+
+POST http://localhost:8080/api/login_check
+Accept: application/json
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905
+
+{
+  "username": "admin",
+  "password": "123"
+}
+
+<> 2026-01-21T161341.404.json
+
+###
+
+POST http://localhost:8080/api/login_check
+Accept: application/json
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: main_deauth_profile_token=c8c905
+
+{
+  "username": "admin",
+  "password": "123"
+}
+
+<> 2026-01-21T161157.500.html
+
+###
+
 POST http://localhost:8080/article/
 Accept: application/json
 Content-Type: application/json

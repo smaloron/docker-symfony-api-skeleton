@@ -13,10 +13,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
-#[Route('/article', name: 'article')]
+#[Route('/api/article', name: 'article')]
 class ArticleController extends AbstractController
 {
     #[Route('', name: '_insert', methods: ['POST'])]
@@ -54,6 +55,20 @@ class ArticleController extends AbstractController
             ['groups' => ['article:read', 'author:read']]
         );
 
+    }
+
+
+    #[Route('', name: '_list', methods: ['GET'])]
+    public function list(ArticleRepository $articleRepository): Response{
+        $articles = $articleRepository->findAll();
+        return $this->json($articles, Response::HTTP_OK, [], ['groups' => ['article:read', 'author:read']]);
+    }
+
+    #[Route('/{id}', name: '_update', methods: ['PUT', 'PATCH'])]
+    public function edit(Article $article): Response{
+        $this->denyAccessUnlessGranted('POST_EDIT', $article);
+
+        return $this->json(['message' => 'Autorisé'], Response::HTTP_OK);
     }
 
 }

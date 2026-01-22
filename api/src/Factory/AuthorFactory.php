@@ -37,7 +37,7 @@ final class AuthorFactory extends PersistentObjectFactory
             'firstName' => self::faker()->firstName(),
             'login' => self::faker()->email(),
             'name' => self::faker()->lastName(),
-            'password' => '123'
+            'plainPassword' => '123'
         ];
     }
 

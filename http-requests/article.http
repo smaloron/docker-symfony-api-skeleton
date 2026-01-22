@@ -1,15 +1,27 @@
-POST http://localhost:8080/article/
+POST http://localhost:8080/api/article
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
 
 {
   "title": "test de Symfony",
   "content": "bla bla",
   "author": {
-    "name": "",
+    "name": "toto",
     "firstName": "Fabien",
     "login": "fab",
     "password": "123"
   }
 
 }
+
+###
+
+GET http://localhost:8080/api/article
+Accept: application/json
+
+###
+
+PUT http://localhost:8080/api/article/522
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
