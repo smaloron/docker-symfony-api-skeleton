@@ -1,3 +1,514 @@
+POST http://localhost:8080/platform-api/books
+Content-Type: application/ld+json
+Content-Length: 97
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "Le guide du routard intergalactique",
+  "publisher": "/platform-api/publishers/1"
+}
+
+<> 2026-01-22T145708.201.json
+
+###
+
+POST http://localhost:8080/platform-api/books
+Content-Type: application/ld+json
+Content-Length: 96
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "Le guide du routard intergalactique",
+  "publisher": "/platform-api/publisher/1"
+}
+
+<> 2026-01-22T145615.400.json
+
+###
+
+GET http://localhost:8080/platform-api/books/slim
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T142911.200.json
+
+###
+
+GET http://localhost:8080/platform-api/custom-books/slim
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T142806.200.json
+
+###
+
+GET http://localhost:8080/platform-api/custom-books/slim
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T142539.500.html
+
+###
+
+GET http://localhost:8080/platform-api/books/slim
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T141816.404.json
+
+###
+
+GET http://localhost:8080/platform-api/books/slim
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T141153.404.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905; sf_redirect=%7B%22token%22%3A%224d9c79%22%2C%22route%22%3A%22_api_%5C%2Fbooks%7B._format%7D_post%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%22api_platform.symfony.main_controller%22%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D
+
+<> 2026-01-22T140852.200.json
+
+###
+
+POST http://localhost:8080/platform-api/books
+Content-Type: application/ld+json
+Content-Length: 108
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "id": 1,
+  "title": "Le guide du routard intergalactique",
+  "publisher": {
+    "name": "Acte Sud"
+  }
+}
+
+<> 2026-01-22T140635.201.json
+
+###
+
+POST http://localhost:8080/platform-api/books
+Content-Type: application/ld+json
+Content-Length: 97
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "id": 1,
+  "title": "Le guide du routard intergalactique",
+  "publisher": {
+    "id": 1
+  }
+}
+
+<> 2026-01-22T140439.500.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T135922.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T135856.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T135821.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T135804.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T135719.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T135635.200.json
+
+###
+
+GET http://localhost:8080/platform-api/publishers?itemsPerPage=2&page=3
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T122815.200.json
+
+###
+
+GET http://localhost:8080/platform-api/publishers?itemsPerPage=2
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T122756.200.json
+
+###
+
+GET http://localhost:8080/platform-api/publishers
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T122418.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T122408.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T122324.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T122223.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T122110.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T122007.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books?page=2
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T121927.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books?page=2
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T121750.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T121648.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905; sf_redirect=%7B%22token%22%3A%221947e1%22%2C%22route%22%3A%22_api_%5C%2Fbooks%7B._format%7D_post%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%22api_platform.symfony.main_controller%22%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D
+
+<> 2026-01-22T115057.200.json
+
+###
+
+POST http://localhost:8080/platform-api/books
+Content-Type: application/ld+json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "Le guide du routard intergalactique"
+}
+
+<> 2026-01-22T115053.201.json
+
+###
+
+POST http://localhost:8080/platform-api/books
+Content-Type: application/json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "Le guide du routard intergalactique"
+}
+
+<> 2026-01-22T115035.415.json
+
+###
+
+POST http://localhost:8080/platform-api/books
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "Le guide du routard intergalactique"
+}
+
+<> 2026-01-22T114958.415.json
+
+###
+
+POST http://localhost:8080/platform-api/books
+Content-Type: application/json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "Le guide du routard intergalactique"
+}
+
+<> 2026-01-22T114945.415.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T114936.200.json
+
+###
+
+GET http://localhost:8080/platform-api/books
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T114829.500.json
+
+###
+
+GET http://localhost:8080/platform-api/book
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T114815.404.html
+
+###
+
+POST http://localhost:8080/platform-api
+Content-Type: application/json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "Le guide du routard intergalactique"
+}
+
+<> 2026-01-22T114740.405.html
+
+###
+
+GET http://localhost:8080/platform-api
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T114718.200.json
+
+###
+
+GET http://localhost:8080/platform-api
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+<> 2026-01-22T114644.406.json
+
+###
+
+POST http://localhost:8080/platform-api
+Accept: application/json
+Content-Type: application/json
+Content-Length: 52
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "Le guide du routard intergalactique"
+}
+
+<> 2026-01-22T114538.405.json
+
+###
+
+POST http://localhost:8080/api/article
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwNzYyOTksImV4cCI6MTc2OTA3OTg5OSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4iLCJuYW1lIjoiV2Vpc3NuYXQifQ.bnuSY_oYY-8HqMUYeObIdav-HImQlUYn84cIPGkAU-gkyJ4Y7xLClsrsYt_u8J8PI38cpC9pHROczSoVxKX7-rCk2gtQEdjnRRdFs-pWEfSrk4hDPIBTFG72sMMXjjD-rR-RoGDWkM0qJn5WPWjSj0hnK2ObUskDiurEEZajnDSx8SXI0iHYnFlFeIBtDxzchyztmEYMVFQ7j_T88AOO2AaU4sJt_MfqYXHiPeT9_S0M-rIZTki1VrqAdzvWUUcASRN_ongQzlhnA6acn2Urb_0kFuWMeANTq2fJrVWDHSSI2v7V9J-mEXtFvqlxtZoML19HYF8ORwewVgIKCMXVEw
+Accept-Language: fr
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "t",
+  "content": "b",
+  "author": {
+    "name": "",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-22T111038.400.json
+
+###
+
+POST http://localhost:8080/api/article
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwNzYyOTksImV4cCI6MTc2OTA3OTg5OSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4iLCJuYW1lIjoiV2Vpc3NuYXQifQ.bnuSY_oYY-8HqMUYeObIdav-HImQlUYn84cIPGkAU-gkyJ4Y7xLClsrsYt_u8J8PI38cpC9pHROczSoVxKX7-rCk2gtQEdjnRRdFs-pWEfSrk4hDPIBTFG72sMMXjjD-rR-RoGDWkM0qJn5WPWjSj0hnK2ObUskDiurEEZajnDSx8SXI0iHYnFlFeIBtDxzchyztmEYMVFQ7j_T88AOO2AaU4sJt_MfqYXHiPeT9_S0M-rIZTki1VrqAdzvWUUcASRN_ongQzlhnA6acn2Urb_0kFuWMeANTq2fJrVWDHSSI2v7V9J-mEXtFvqlxtZoML19HYF8ORwewVgIKCMXVEw
+Accept-Language: en
+Content-Length: 141
+User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Cookie: PHPSESSID=909cab10fc0f7bac67c544b927c077d6; api_auth_profile_token=7c0bb7; main_deauth_profile_token=c8c905
+
+{
+  "title": "t",
+  "content": "b",
+  "author": {
+    "name": "",
+    "firstName": "Fabien",
+    "login": "fab",
+    "password": "123"
+  }
+
+}
+
+<> 2026-01-22T111018.400.json
+
+###
+
 POST http://localhost:8080/api/article
 Accept: application/json
 Content-Type: application/json
@@ -169,530 +680,6 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
 
 <> 2026-01-22T103147.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T102932.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T102818.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T102531.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T102243.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T102209.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T102130.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T102032.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T101946.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T101848.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T101649.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr_FR
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T101629.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T101613.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T101503.500.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T101205.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T100953.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=en
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T100940.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=en
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T100851.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T100843.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T100803.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T100352.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T100055.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T095931.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T095805.200.json
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T095702.200.html
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T095450.200.html
-
-###
-
-GET http://localhost:8080/hello?_locale=fr
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T095108.200.html
-
-###
-
-GET http://localhost:8080/hello
-Accept: application/json
-Accept-Language: fr_FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T094219.200.json
-
-###
-
-GET http://localhost:8080/hello
-Accept: application/json
-Accept-Language: fr-FR;fr;q=0.9;en;q=0.8
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T094157.200.json
-
-###
-
-GET http://localhost:8080/hello
-Accept: application/json
-Accept-Language: fr;en;q=0.9
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T093934.200.json
-
-###
-
-GET http://localhost:8080/hello
-Accept: application/json
-Accept-Language: fr;en;q=0.9
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-22T093909.200.json
-
-###
-
-PUT http://localhost:8080/api/article/522
-Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-content-length: 0
-
-<> 2026-01-21T164308.200.json
-
-###
-
-PUT http://localhost:8080/api/article/617
-Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-content-length: 0
-
-<> 2026-01-21T164222.403.json
-
-###
-
-PUT http://localhost:8080/api/article/617
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-content-length: 0
-
-<> 2026-01-21T164204.403.json
-
-###
-
-GET http://localhost:8080/api/article
-Accept: application/json
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-<> 2026-01-21T162236.200.json
-
-###
-
-POST http://localhost:8080/api/article
-Accept: application/json
-Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
-Content-Length: 165
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: PHPSESSID=e460dd4e89c1f64b0e8f0f22b081c27f; api_auth_profile_token=f7e937; main_deauth_profile_token=c8c905
-
-{
-  "title": "test de Symfony",
-  "content": "bla bla",
-  "author": {
-    "name": "toto",
-    "firstName": "Fabien",
-    "login": "fab",
-    "password": "123"
-  }
-
-}
-
-<> 2026-01-21T161954.400.json
-
-###
-
-POST http://localhost:8080/api/article
-Accept: application/json
-Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwMDg2NzEsImV4cCI6MTc2OTAxMjI3MSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4ifQ.m62dhDkPajDiJmKOg8WDfxBtRazaT_6aClCqK5fS2w8gbkBz36ISRzFvR0LG5eCN3iviHsBDkLKm2VRGZa-oqxeuCDLRmaGWHSNMxJqbqP2xT5HqHkpExdhZGTJGLmNBGHanVOgfQNYtCugVLeRbxF0nYazdgfjKcdEyUocTLLH3pGzq_RrS0camb94vCKezF8e0GO3H3lGO0QCkbNZOzW2BpmXZsJZk94lbV6DSpEY6Fgcm4fpmR9UJ1xTrsy5r1zgwxgZhHfCta60y0bACtZVornOTHqyqQypRe-nVkrwlxwclAKgbju6ftLiixTvRHJpqj4oealLl11Sin_Yu1Q
-Content-Length: 161
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: api_deauth_profile_token=62fa88; main_deauth_profile_token=c8c905
-
-{
-  "title": "test de Symfony",
-  "content": "bla bla",
-  "author": {
-    "name": "",
-    "firstName": "Fabien",
-    "login": "fab",
-    "password": "123"
-  }
-
-}
-
-<> 2026-01-21T161941.400.json
-
-###
-
-POST http://localhost:8080/api/article
-Accept: application/json
-Content-Type: application/json
-Content-Length: 161
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: main_deauth_profile_token=c8c905
-
-{
-  "title": "test de Symfony",
-  "content": "bla bla",
-  "author": {
-    "name": "",
-    "firstName": "Fabien",
-    "login": "fab",
-    "password": "123"
-  }
-
-}
-
-<> 2026-01-21T161837.401.json
-
-###
-
-POST http://localhost:8080/api/article/
-Accept: application/json
-Content-Type: application/json
-Content-Length: 161
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: main_deauth_profile_token=c8c905
-
-{
-  "title": "test de Symfony",
-  "content": "bla bla",
-  "author": {
-    "name": "",
-    "firstName": "Fabien",
-    "login": "fab",
-    "password": "123"
-  }
-
-}
-
-<> 2026-01-21T161830.404.json
-
-###
-
-POST http://localhost:8080/api/login_check
-Accept: application/json
-Content-Type: application/json
-Content-Length: 46
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: main_deauth_profile_token=c8c905
-
-{
-  "username": "admin",
-  "password": "123"
-}
-
-<> 2026-01-21T161751.200.json
-
-###
-
-POST http://localhost:8080/api/login_check
-Accept: application/json
-Content-Type: application/json
-Content-Length: 46
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: main_deauth_profile_token=c8c905
-
-{
-  "username": "admin",
-  "password": "123"
-}
-
-<> 2026-01-21T161530.500.json
-
-###
-
-POST http://localhost:8080/api/login_check
-Accept: application/json
-Content-Type: application/json
-Content-Length: 46
-User-Agent: IntelliJ HTTP Client/PhpStorm 2025.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Cookie: main_deauth_profile_token=c8c905
-
-{
-  "username": "admin",
-  "password": "123"
-}
-
-<> 2026-01-21T161341.404.json
 
 ###
 

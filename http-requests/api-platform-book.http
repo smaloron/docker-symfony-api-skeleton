@@ -1,0 +1,15 @@
+POST http://localhost:8080/platform-api/books
+Content-Type: application/ld+json
+
+{
+  "title": "Le guide du routard intergalactique",
+  "publisher": "/platform-api/publishers/1"
+}
+
+###
+
+GET http://localhost:8080/platform-api/books/slim
+
+###
+
+GET http://localhost:8080/platform-api/publishers?itemsPerPage=2&page=3

@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>755</IntrospectionStateNumber>
+      <IntrospectionStateNumber>847</IntrospectionStateNumber>
       <ServerVersion>17.7</ServerVersion>
-      <StartupTime>1768836497</StartupTime>
+      <StartupTime>1769073625</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -802,7 +802,7 @@ false posixrules
 13280||10|C|G
 13280||-9223372036854775808|U|G
 13280||10|U|G</Grants>
-      <IntrospectionStateNumber>755</IntrospectionStateNumber>
+      <IntrospectionStateNumber>847</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>app</OwnerName>
     </database>
@@ -4230,11 +4230,11 @@ false posixrules
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>755</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>755</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>755</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>847</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>847</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>847</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-01-19.15:55:53</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-01-22.13:03:59</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4257,7 +4257,25 @@ false posixrules
       <StoredType>integer|0s</StoredType>
       <OwnerName>app</OwnerName>
     </sequence>
-    <sequence id="268" parent="265" name="messenger_messages_id_seq">
+    <sequence id="268" parent="265" name="book_id_seq">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16510</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>823</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <OwnerName>app</OwnerName>
+    </sequence>
+    <sequence id="269" parent="265" name="ingredient_id_seq">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16428</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>788</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <OwnerName>app</OwnerName>
+    </sequence>
+    <sequence id="270" parent="265" name="messenger_messages_id_seq">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>16410</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -4266,35 +4284,88 @@ false posixrules
       <StoredType>bigint|0s</StoredType>
       <OwnerName>app</OwnerName>
     </sequence>
-    <table id="269" parent="265" name="articles">
+    <sequence id="271" parent="265" name="pizza_id_seq">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16434</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>788</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <OwnerName>app</OwnerName>
+    </sequence>
+    <sequence id="272" parent="265" name="publisher_id_seq">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16522</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>828</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <OwnerName>app</OwnerName>
+    </sequence>
+    <table id="273" parent="265" name="articles">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>16396</ObjectId>
-      <StateNumber>754</StateNumber>
+      <StateNumber>798</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>app</OwnerName>
     </table>
-    <table id="270" parent="265" name="author">
+    <table id="274" parent="265" name="author">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>16405</ObjectId>
-      <StateNumber>754</StateNumber>
+      <StateNumber>798</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>app</OwnerName>
     </table>
-    <table id="271" parent="265" name="doctrine_migration_versions">
+    <table id="275" parent="265" name="book">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16511</ObjectId>
+      <StateNumber>828</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>app</OwnerName>
+    </table>
+    <table id="276" parent="265" name="doctrine_migration_versions">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>16389</ObjectId>
       <StateNumber>751</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>app</OwnerName>
     </table>
-    <table id="272" parent="265" name="messenger_messages">
+    <table id="277" parent="265" name="ingredient">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16429</ObjectId>
+      <StateNumber>798</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>app</OwnerName>
+    </table>
+    <table id="278" parent="265" name="messenger_messages">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>16411</ObjectId>
       <StateNumber>752</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>app</OwnerName>
     </table>
-    <column id="273" parent="269" name="id">
+    <table id="279" parent="265" name="pizza">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16435</ObjectId>
+      <StateNumber>798</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>app</OwnerName>
+    </table>
+    <table id="280" parent="265" name="pizza_ingredient">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16440</ObjectId>
+      <StateNumber>798</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>app</OwnerName>
+    </table>
+    <table id="281" parent="265" name="publisher">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16523</ObjectId>
+      <StateNumber>828</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>app</OwnerName>
+    </table>
+    <column id="282" parent="273" name="id">
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -4303,71 +4374,71 @@ false posixrules
       <SequenceId>16395</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="274" parent="269" name="title">
+    <column id="283" parent="273" name="title">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>752</StateNumber>
       <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="275" parent="269" name="content">
+    <column id="284" parent="273" name="content">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>752</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="276" parent="269" name="created_at">
+    <column id="285" parent="273" name="created_at">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>752</StateNumber>
       <StoredType>timestamp(0)|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="277" parent="269" name="updated_at">
+    <column id="286" parent="273" name="updated_at">
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <Position>5</Position>
       <StateNumber>752</StateNumber>
       <StoredType>timestamp(0)|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="278" parent="269" name="author_id">
+    <column id="287" parent="273" name="author_id">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>754</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="279" parent="269" name="fk_bfdd3168f675f31b">
+    <foreign-key id="288" parent="273" name="fk_bfdd3168f675f31b">
       <ColNames>author_id</ColNames>
       <ObjectId>16420</ObjectId>
       <StateNumber>754</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16405</RefTableId>
     </foreign-key>
-    <index id="280" parent="269" name="articles_pkey">
+    <index id="289" parent="273" name="articles_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16402</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>752</StateNumber>
+      <StateNumber>798</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="281" parent="269" name="idx_bfdd3168f675f31b">
+    <index id="290" parent="273" name="idx_bfdd3168f675f31b">
       <ColNames>author_id</ColNames>
       <ObjectId>16425</ObjectId>
-      <StateNumber>754</StateNumber>
+      <StateNumber>798</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="282" parent="269" name="articles_pkey">
+    <key id="291" parent="273" name="articles_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16403</ObjectId>
       <Primary>1</Primary>
       <StateNumber>752</StateNumber>
       <UnderlyingIndexId>16402</UnderlyingIndexId>
     </key>
-    <column id="283" parent="270" name="id">
+    <column id="292" parent="274" name="id">
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -4376,71 +4447,123 @@ false posixrules
       <SequenceId>16404</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="284" parent="270" name="name">
+    <column id="293" parent="274" name="name">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>752</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="285" parent="270" name="first_name">
+    <column id="294" parent="274" name="first_name">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>752</StateNumber>
       <StoredType>varchar(30)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="286" parent="270" name="login">
+    <column id="295" parent="274" name="login">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>752</StateNumber>
       <StoredType>varchar(30)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="287" parent="270" name="password">
+    <column id="296" parent="274" name="password">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>752</StateNumber>
       <StoredType>varchar(128)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="288" parent="270" name="author_pkey">
+    <index id="297" parent="274" name="author_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16408</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>752</StateNumber>
+      <StateNumber>798</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="289" parent="270" name="author_pkey">
+    <key id="298" parent="274" name="author_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16409</ObjectId>
       <Primary>1</Primary>
       <StateNumber>752</StateNumber>
       <UnderlyingIndexId>16408</UnderlyingIndexId>
     </key>
-    <column id="290" parent="271" name="version">
+    <column id="299" parent="275" name="id">
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>823</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <SequenceId>16510</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="300" parent="275" name="title">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>823</StateNumber>
+      <StoredType>varchar(128)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="301" parent="275" name="publisher_id">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>828</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="302" parent="275" name="fk_cbe5a33140c86fce">
+      <ColNames>publisher_id</ColNames>
+      <ObjectId>16528</ObjectId>
+      <StateNumber>828</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16523</RefTableId>
+    </foreign-key>
+    <index id="303" parent="275" name="book_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16514</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>823</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="304" parent="275" name="idx_cbe5a33140c86fce">
+      <ColNames>publisher_id</ColNames>
+      <ObjectId>16533</ObjectId>
+      <StateNumber>828</StateNumber>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="305" parent="275" name="book_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16515</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>823</StateNumber>
+      <UnderlyingIndexId>16514</UnderlyingIndexId>
+    </key>
+    <column id="306" parent="276" name="version">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>751</StateNumber>
       <StoredType>varchar(191)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="291" parent="271" name="executed_at">
+    <column id="307" parent="276" name="executed_at">
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <Position>2</Position>
       <StateNumber>751</StateNumber>
       <StoredType>timestamp(0)|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="292" parent="271" name="execution_time">
+    <column id="308" parent="276" name="execution_time">
       <Position>3</Position>
       <StateNumber>751</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <index id="293" parent="271" name="doctrine_migration_versions_pkey">
+    <index id="309" parent="276" name="doctrine_migration_versions_pkey">
       <ColNames>version</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16393</ObjectId>
@@ -4452,14 +4575,46 @@ false posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="294" parent="271" name="doctrine_migration_versions_pkey">
+    <key id="310" parent="276" name="doctrine_migration_versions_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16394</ObjectId>
       <Primary>1</Primary>
       <StateNumber>751</StateNumber>
       <UnderlyingIndexId>16393</UnderlyingIndexId>
     </key>
-    <column id="295" parent="272" name="id">
+    <column id="311" parent="277" name="id">
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>788</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <SequenceId>16428</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="312" parent="277" name="name">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>788</StateNumber>
+      <StoredType>varchar(30)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="313" parent="277" name="ingredient_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16432</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>798</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="314" parent="277" name="ingredient_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16433</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>788</StateNumber>
+      <UnderlyingIndexId>16432</UnderlyingIndexId>
+    </key>
+    <column id="315" parent="278" name="id">
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -4468,49 +4623,49 @@ false posixrules
       <SequenceId>16410</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="296" parent="272" name="body">
+    <column id="316" parent="278" name="body">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>752</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="297" parent="272" name="headers">
+    <column id="317" parent="278" name="headers">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>752</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="298" parent="272" name="queue_name">
+    <column id="318" parent="278" name="queue_name">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>752</StateNumber>
       <StoredType>varchar(190)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="299" parent="272" name="created_at">
+    <column id="319" parent="278" name="created_at">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>752</StateNumber>
       <StoredType>timestamp(0)|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="300" parent="272" name="available_at">
+    <column id="320" parent="278" name="available_at">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>752</StateNumber>
       <StoredType>timestamp(0)|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="301" parent="272" name="delivered_at">
+    <column id="321" parent="278" name="delivered_at">
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <Position>7</Position>
       <StateNumber>752</StateNumber>
       <StoredType>timestamp(0)|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <index id="302" parent="272" name="messenger_messages_pkey">
+    <index id="322" parent="278" name="messenger_messages_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16417</ObjectId>
@@ -4519,7 +4674,7 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="303" parent="272" name="idx_75ea56e0fb7336f0e3bd61ce16ba31dbbf396750">
+    <index id="323" parent="278" name="idx_75ea56e0fb7336f0e3bd61ce16ba31dbbf396750">
       <ColNames>queue_name
 available_at
 delivered_at
@@ -4531,12 +4686,142 @@ id</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="304" parent="272" name="messenger_messages_pkey">
+    <key id="324" parent="278" name="messenger_messages_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16418</ObjectId>
       <Primary>1</Primary>
       <StateNumber>752</StateNumber>
       <UnderlyingIndexId>16417</UnderlyingIndexId>
+    </key>
+    <column id="325" parent="279" name="id">
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>788</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <SequenceId>16434</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="326" parent="279" name="name">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>788</StateNumber>
+      <StoredType>varchar(30)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="327" parent="279" name="price">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>788</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="328" parent="279" name="pizza_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16438</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>798</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="329" parent="279" name="pizza_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16439</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>788</StateNumber>
+      <UnderlyingIndexId>16438</UnderlyingIndexId>
+    </key>
+    <column id="330" parent="280" name="pizza_id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>788</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="331" parent="280" name="ingredient_id">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>788</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="332" parent="280" name="fk_6ff6c03fd41d1d42">
+      <ColNames>pizza_id</ColNames>
+      <ObjectId>16447</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <StateNumber>788</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16435</RefTableId>
+    </foreign-key>
+    <foreign-key id="333" parent="280" name="fk_6ff6c03f933fe08c">
+      <ColNames>ingredient_id</ColNames>
+      <ObjectId>16452</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <StateNumber>788</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16429</RefTableId>
+    </foreign-key>
+    <index id="334" parent="280" name="pizza_ingredient_pkey">
+      <ColNames>pizza_id
+ingredient_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16443</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>798</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="335" parent="280" name="idx_6ff6c03fd41d1d42">
+      <ColNames>pizza_id</ColNames>
+      <ObjectId>16445</ObjectId>
+      <StateNumber>798</StateNumber>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="336" parent="280" name="idx_6ff6c03f933fe08c">
+      <ColNames>ingredient_id</ColNames>
+      <ObjectId>16446</ObjectId>
+      <StateNumber>798</StateNumber>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="337" parent="280" name="pizza_ingredient_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16444</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>788</StateNumber>
+      <UnderlyingIndexId>16443</UnderlyingIndexId>
+    </key>
+    <column id="338" parent="281" name="id">
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>828</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <SequenceId>16522</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="339" parent="281" name="name">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>828</StateNumber>
+      <StoredType>varchar(64)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="340" parent="281" name="publisher_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16526</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>828</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="341" parent="281" name="publisher_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16527</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>828</StateNumber>
+      <UnderlyingIndexId>16526</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

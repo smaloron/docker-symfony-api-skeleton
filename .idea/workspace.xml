@@ -4,26 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de267d6-c21a-474c-a888-fb1ec55bf42d" name="Changes" comment="Sécurité">
-      <change afterPath="$PROJECT_DIR$/api/src/EventSubscriber/LocalSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/translations/messages.en.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/translations/messages.fr.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/translations/validators.en.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/translations/validators.fr.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http-requests/translation-test.http" afterDir="false" />
+    <list default="true" id="6de267d6-c21a-474c-a888-fb1ec55bf42d" name="Changes" comment="Traduction">
+      <change afterPath="$PROJECT_DIR$/api/src/ApiResource/Processor/BookInputProcessor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/ApiResource/Provider/BookSlimProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/Dto/BookInputDto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http-requests/api-platform-book.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e5099886-3084-4e6c-a963-1cade3768674.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e5099886-3084-4e6c-a963-1cade3768674.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e5099886-3084-4e6c-a963-1cade3768674/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e5099886-3084-4e6c-a963-1cade3768674/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-01-20T095217.404.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-01-20T095401.201.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-01-20T095730.201.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-01-20T100031.201.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/reference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/Entity/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/EventListener/JwtCreationListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/EventListener/JwtCreationListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/service/GreetingService.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/service/GreetingService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http-requests/article.http" beforeDir="false" afterPath="$PROJECT_DIR$/http-requests/article.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -221,6 +225,24 @@
       <path value="$PROJECT_DIR$/api/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/api/vendor/lcobucci/jwt" />
       <path value="$PROJECT_DIR$/api/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/api/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/doctrine-common" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/documentation" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/validator" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/serializer" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/openapi" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/state" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/symfony" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/doctrine-orm" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/http-cache" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/jsonld" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/hydra" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/metadata" />
+      <path value="$PROJECT_DIR$/api/vendor/api-platform/json-schema" />
+      <path value="$PROJECT_DIR$/api/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/api/vendor/nelmio/cors-bundle" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -233,6 +255,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.api-platform-book | #1.executor": "Run",
+    "HTTP Request.api-platform-book | #2.executor": "Run",
+    "HTTP Request.api-platform-book | #3.executor": "Run",
     "HTTP Request.article | #1.executor": "Run",
     "HTTP Request.article | #2.executor": "Run",
     "HTTP Request.article | #3.executor": "Run",
@@ -277,40 +302,40 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
+              <entry key="api-platform-book | #1" value="STOPPED" />
+              <entry key="api-platform-book | #2" value="STOPPED" />
+              <entry key="api-platform-book | #3" value="STOPPED" />
               <entry key="article | #1" value="STOPPED" />
-              <entry key="article | #2" value="STOPPED" />
-              <entry key="article | #3" value="STOPPED" />
               <entry key="auth | #1" value="STOPPED" />
-              <entry key="translation-test | #1" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.article | #1">
+  <component name="RunManager" selected="HTTP Request.api-platform-book | #1">
+    <configuration name="api-platform-book | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/api-platform-book.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="api-platform-book | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/api-platform-book.http" executionIdentifier="#2" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="api-platform-book | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/api-platform-book.http" executionIdentifier="#3" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="article | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/article.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="article | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/article.http" executionIdentifier="#2" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="article | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/article.http" executionIdentifier="#3" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="auth | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/auth.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="translation-test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http-requests/translation-test.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.api-platform-book | #1" />
+        <item itemvalue="HTTP Request.api-platform-book | #2" />
+        <item itemvalue="HTTP Request.api-platform-book | #3" />
         <item itemvalue="HTTP Request.article | #1" />
         <item itemvalue="HTTP Request.auth | #1" />
-        <item itemvalue="HTTP Request.translation-test | #1" />
-        <item itemvalue="HTTP Request.article | #3" />
-        <item itemvalue="HTTP Request.article | #2" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +360,7 @@
       <workItem from="1768755366101" duration="6210000" />
       <workItem from="1768813720053" duration="20019000" />
       <workItem from="1768887357497" duration="54501000" />
-      <workItem from="1769065510293" duration="8959000" />
+      <workItem from="1769065510293" duration="19484000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -409,7 +434,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769065431062</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Traduction">
+      <option name="closed" value="true" />
+      <created>1769076542739</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1769076542739</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +469,8 @@
     <MESSAGE value="Ajoute .idea à .gitignore" />
     <MESSAGE value="Tests unitaires et fonctionnels" />
     <MESSAGE value="Sécurité" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sécurité" />
+    <MESSAGE value="Traduction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Traduction" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

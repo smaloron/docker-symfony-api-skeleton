@@ -2,7 +2,7 @@ POST http://localhost:8080/api/article
 Accept: application/json
 Content-Type: application/json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjkwNzYyOTksImV4cCI6MTc2OTA3OTg5OSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYWRtaW4iLCJuYW1lIjoiV2Vpc3NuYXQifQ.bnuSY_oYY-8HqMUYeObIdav-HImQlUYn84cIPGkAU-gkyJ4Y7xLClsrsYt_u8J8PI38cpC9pHROczSoVxKX7-rCk2gtQEdjnRRdFs-pWEfSrk4hDPIBTFG72sMMXjjD-rR-RoGDWkM0qJn5WPWjSj0hnK2ObUskDiurEEZajnDSx8SXI0iHYnFlFeIBtDxzchyztmEYMVFQ7j_T88AOO2AaU4sJt_MfqYXHiPeT9_S0M-rIZTki1VrqAdzvWUUcASRN_ongQzlhnA6acn2Urb_0kFuWMeANTq2fJrVWDHSSI2v7V9J-mEXtFvqlxtZoML19HYF8ORwewVgIKCMXVEw
-Accept-Language: en
+Accept-Language: fr
 
 {
   "title": "t",
