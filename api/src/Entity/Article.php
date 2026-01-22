@@ -18,10 +18,10 @@ class Article
     #[ORM\Column]
     private ?int $id = null;
 
-    #[Assert\NotBlank(message: 'Le titre ne peut être vide')]
+    #[Assert\NotBlank(message: 'article.title.empty')]
     #[Assert\Length(min: 5, max: 90,
-        minMessage: 'Le titre ne peut faire moins de {{ limit }} caractères',
-        maxMessage: 'Le titre ne peut faire plus de {{ limit }} caractères')
+        minMessage: 'article.title.minMessage',
+        maxMessage: 'article.title.MaxMessage')
     ]
     #[Groups(['article:read', 'article:write'])]
     #[ORM\Column(length: 255)]

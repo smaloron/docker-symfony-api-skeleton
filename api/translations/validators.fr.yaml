@@ -1,0 +1,8 @@
+author:
+    name:
+        empty: Le nom de l'auteur ne peut être vide
+article:
+    title:
+        minMessage: Le titre ne peut faire moins de {{ limit }} caractères
+        maxMessage: Le titre ne peut faire plus de {{ limit }} caractères
+        empty: Le titre ne peut être vide

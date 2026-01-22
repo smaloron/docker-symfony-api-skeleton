@@ -20,7 +20,7 @@ class Author implements PasswordAuthenticatedUserInterface, UserInterface
     #[Groups(['author:read', 'article:write'])]
     private ?int $id = null;
 
-    #[Assert\NotBlank(message:"Le nom de l'auteur ne peut être vide")]
+    #[Assert\NotBlank(message:"author.name.empty")]
         #[Groups(['author:read', 'article:write'])]
     #[ORM\Column(length: 50)]
     private ?string $name = null;

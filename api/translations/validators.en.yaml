@@ -1,0 +1,8 @@
+author:
+    name:
+        empty: The author name cannot be empty
+article:
+    title:
+        minMessage: The title must not contains less than {{ limit }} characters
+        maxMessage: The title must not contains more than {{ limit }} character
+        empty: The title cannot be empty

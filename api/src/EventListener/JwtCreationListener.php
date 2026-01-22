@@ -14,7 +14,7 @@ class JwtCreationListener
         $payload = $event->getData();
         $user = $event->getUser();
         $payload['name'] = $user->getName();
-        $payload['exp'] = new \DateTime('+20 minutes');
+        //$payload['exp'] = new \DateTime('+20 minutes');
 
         $event->setData($payload);
 
